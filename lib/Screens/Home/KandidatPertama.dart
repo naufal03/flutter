@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Visi1.dart';
 
@@ -13,12 +14,8 @@ class KandidatPertama extends StatelessWidget {
         ),
         body: Container(
           decoration: BoxDecoration(
-            image: DecorationImage(
-              scale: 4,
-              image: AssetImage(
-                'assets/icons/wlp.jpg',
-              ),
-            ),
+            color: Colors.purple,
+            borderRadius: BorderRadius.circular(10.0)
           ),
           child: Padding(
             padding: EdgeInsets.all(10.0),
