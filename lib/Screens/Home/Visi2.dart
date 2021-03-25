@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Home/KandidatPertama.dart';
 
-class Visi1 extends StatelessWidget {
+class Visi2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,21 +21,21 @@ class Visi1 extends StatelessWidget {
                         children: <Widget> [
                           new Padding(padding: EdgeInsets.all(5.0)),
                           new RaisedButton(
-                            color: Colors.purple,
-                            child: Text(
+                              color: Colors.purple,
+                              child: Text(
                                 'Back',
-                                    style: TextStyle(
-                                      color: Colors.purpleAccent,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                            ),
+                                style: TextStyle(
+                                  color: Colors.purpleAccent,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               onPressed: () {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(builder: (context) =>
                                         KandidatPertama()));
                               }
-                              )
+                          )
                         ],
                       ),
                     ),
@@ -51,12 +51,12 @@ class Visi1 extends StatelessWidget {
                               children:<Widget>[
                                 new Padding(padding: EdgeInsets.all(10.0)),
                                 new Image.asset(
-                                  'assets/images/Arkan.jpg',
+                                  'assets/images/Galuh.jpg',
                                   width: 300,
                                   height: 300,
                                 ),
                                 new Text(''
-                                    'Naufal Arkan Zhafran',
+                                    'Muhammad Galuh Setiawan',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
@@ -96,19 +96,12 @@ class Visi1 extends StatelessWidget {
                                                 children: <Widget>[
                                                   new Padding(padding: EdgeInsets.all(10.0)),
                                                   new Text(
-                                                    'Menjadikan siswa/i yang taat kepada Peraturan',
+                                                    'menjadikan siswa/i yang berbudi pekerti luhur',
                                                     style: TextStyle(
                                                       color: Colors.white,
                                                       fontWeight: FontWeight.bold,
                                                     ),
                                                   ),
-                                                  new Text(
-                                                    'Agama Dan Negara',
-                                                    style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontWeight: FontWeight.bold,
-                                                    ),
-                                                  )
                                                 ],
                                               ),
                                             )
@@ -131,21 +124,21 @@ class Visi1 extends StatelessWidget {
                                                       children: <Widget>[
                                                         new Padding(padding: EdgeInsets.all(5.0)),
                                                         new Text(
-                                                          '1. Membuat Siswa Memiliki Kesadaran Tentang Agama',
+                                                          '1.melaksanakan kegiatan positif di sekolah',
                                                           style: TextStyle(
                                                             color: Colors.white,
                                                             fontWeight: FontWeight.bold,
                                                           ),
                                                         ),
                                                         new Text(
-                                                          '2. Menjadikan Sekolah Tempat Yang Nyaman Untuk Belajar',
+                                                          '2. menjadikan siswa SMKN 1 GUNUNGPUTRI bermartabat',
                                                           style: TextStyle(
                                                             color: Colors.white,
                                                             fontWeight: FontWeight.bold,
                                                           ),
                                                         ),
                                                         new Text(
-                                                          '3. Memfasilitasi bakat dan minat seni pada diri siswa.',
+                                                          '3. meningkatkan rasa bersaing siswa dalam hal belajar',
                                                           style: TextStyle(
                                                             color: Colors.white,
                                                             fontWeight: FontWeight.bold,

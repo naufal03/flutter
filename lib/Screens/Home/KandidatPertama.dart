@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/Home/HasilVote.dart';
+import 'package:flutter_auth/Screens/Home/Visi2.dart';
+import 'package:flutter_auth/Screens/Home/Visi3.dart';
 import 'Visi1.dart';
 
 class KandidatPertama extends StatelessWidget {
@@ -13,10 +16,7 @@ class KandidatPertama extends StatelessWidget {
           title: Text('Calon Ketua Osis'),
         ),
         body: Container(
-          decoration: BoxDecoration(
-            color: Colors.purple,
-            borderRadius: BorderRadius.circular(10.0)
-          ),
+         color: Colors.purple,
           child: Padding(
             padding: EdgeInsets.all(10.0),
             child: SafeArea(
@@ -36,7 +36,7 @@ class KandidatPertama extends StatelessWidget {
                             width: 140,
                             height: 120,
                           ),
-                          new Text('Naufal Arkan '),
+                          new Text('Naufal A '),
                           new RaisedButton(
                             color: Colors.purple,
                             child: Text(
@@ -70,7 +70,7 @@ class KandidatPertama extends StatelessWidget {
                             width: 140,
                             height: 120,
                           ),
-                          new Text('Galuh S           '),
+                          new Text('Galuh S'),
                           new RaisedButton(
                             color: Colors.purple,
                             child: Text(
@@ -79,7 +79,11 @@ class KandidatPertama extends StatelessWidget {
                                   color: Colors.purpleAccent,
                                   fontWeight: FontWeight.bold),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Visi2()));
+                            },
                           ),
                         ],
                       ),
@@ -90,7 +94,7 @@ class KandidatPertama extends StatelessWidget {
                     child: Card(
                       color: Colors.purpleAccent,
                       elevation: 3.0,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       child: Row(
                         children: <Widget>[
                           new Padding(padding: EdgeInsets.all(10.0)),
@@ -99,7 +103,7 @@ class KandidatPertama extends StatelessWidget {
                             width: 140,
                             height: 120,
                           ),
-                          new Text('Sahid F           '),
+                          new Text('Sahid F'),
                           new RaisedButton(
                             color: Colors.purple,
                             child: Text(
@@ -108,12 +112,40 @@ class KandidatPertama extends StatelessWidget {
                                   color: Colors.purpleAccent,
                                   fontWeight: FontWeight.bold),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Visi3()));
+
+                            },
                           ),
                         ],
                       ),
                     ),
                   ),
+                  new Padding(padding: EdgeInsets.all(30.0)),
+                  new SizedBox(
+                      child: Column(
+                        children: <Widget>[
+                          new Padding(padding: EdgeInsets.all(5.0)),
+                          new RaisedButton(
+                            color: Colors.purpleAccent,
+                            child: Text(
+                              'Hasil Vote',
+                               style: TextStyle(
+                                 color: Colors.white,
+                                 fontWeight: FontWeight.bold,
+                               ),
+                            ),
+                            onPressed: (){
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => HasilVote()));
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
                 ],
               ),
             ),
