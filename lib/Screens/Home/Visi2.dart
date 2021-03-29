@@ -17,31 +17,8 @@ class Visi2 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     new SizedBox(
-                      child: Row(
-                        children: <Widget> [
-                          new Padding(padding: EdgeInsets.all(5.0)),
-                          new RaisedButton(
-                              color: Colors.purple,
-                              child: Text(
-                                'Back',
-                                style: TextStyle(
-                                  color: Colors.purpleAccent,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) =>
-                                        KandidatPertama()));
-                              }
-                          )
-                        ],
-                      ),
-                    ),
-                    new SizedBox(
                         width: 500,
-                        height: 780,
+                        height: 700,
                         child: Card(
                             color: Colors.purpleAccent,
                             elevation: 5,
@@ -53,7 +30,7 @@ class Visi2 extends StatelessWidget {
                                 new Image.asset(
                                   'assets/images/Galuh.jpg',
                                   width: 300,
-                                  height: 300,
+                                  height: 200,
                                 ),
                                 new Text(''
                                     'Muhammad Galuh Setiawan',
@@ -147,24 +124,6 @@ class Visi2 extends StatelessWidget {
                                                         new SizedBox(
                                                           child: Column(
                                                             children: <Widget> [
-                                                              new Padding(padding: EdgeInsets.all(15.0)),
-                                                              new RaisedButton(
-                                                                color: Colors.purple,
-                                                                child: Text(
-                                                                    'VOTE',
-                                                                    style: TextStyle(
-                                                                      color: Colors.white,
-                                                                      fontWeight: FontWeight.bold,
-                                                                    )
-                                                                ),
-                                                                onPressed: () {},
-                                                              )
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        new SizedBox(
-                                                          child: Column(
-                                                            children: <Widget> [
                                                               new Padding(padding: EdgeInsets.all(5.0)),
                                                               new RaisedButton(
                                                                 color: Colors.purple,
@@ -176,7 +135,7 @@ class Visi2 extends StatelessWidget {
                                                                     )
                                                                 ),
                                                                 onPressed: () {
-                                                                  Navigator.push(
+                                                                  Navigator.pushReplacement(
                                                                       context,
                                                                       MaterialPageRoute(builder: (context) => KandidatPertama()));
                                                                 },

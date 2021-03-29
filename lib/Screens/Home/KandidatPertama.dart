@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/Screens/Home/HasilVote.dart';
+import 'package:flutter_auth/Screens/Home/Polls.dart';
 import 'package:flutter_auth/Screens/Home/Visi2.dart';
 import 'package:flutter_auth/Screens/Home/Visi3.dart';
+import 'package:polls/polls.dart';
 import 'Visi1.dart';
 
 class KandidatPertama extends StatelessWidget {
@@ -46,11 +47,10 @@ class KandidatPertama extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             onPressed: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(builder: (contex) => Visi1()));
                             }
-
                           ),
                         ],
                       ),
@@ -80,7 +80,7 @@ class KandidatPertama extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             onPressed: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(builder: (context) => Visi2()));
                             },
@@ -113,7 +113,7 @@ class KandidatPertama extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             onPressed: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(builder: (context) => Visi3()));
 
@@ -123,7 +123,7 @@ class KandidatPertama extends StatelessWidget {
                       ),
                     ),
                   ),
-                  new Padding(padding: EdgeInsets.all(30.0)),
+                  new Padding(padding: EdgeInsets.all(20.0)),
                   new SizedBox(
                       child: Column(
                         children: <Widget>[
@@ -131,7 +131,7 @@ class KandidatPertama extends StatelessWidget {
                           new RaisedButton(
                             color: Colors.purpleAccent,
                             child: Text(
-                              'Hasil Vote',
+                              'VOTE',
                                style: TextStyle(
                                  color: Colors.white,
                                  fontWeight: FontWeight.bold,
@@ -140,8 +140,8 @@ class KandidatPertama extends StatelessWidget {
                             onPressed: (){
                               Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => HasilVote()));
-                            },
+                                  MaterialPageRoute(builder: (context) =>PollView() ));
+                            }
                           ),
                         ],
                       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Welcome/WelcomeScreen.dart';
 import 'package:flutter_auth/constants.dart';
+import 'package:polls/polls.dart';
 
 void main() => runApp(MyApp());
 

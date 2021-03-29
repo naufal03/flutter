@@ -44,9 +44,10 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: "LOGIN",
               press: () {
-                Navigator.push(context,
+                Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context){
                       return KandidatPertama();
+                      return SignUpScreen();
                 }
                 ));
               }
@@ -54,7 +55,7 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               press: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
