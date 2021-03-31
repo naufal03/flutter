@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:polls/polls.dart';
-import 'polls.dart';
+// import 'polls.dart';
 
 
 void main() => runApp(MyApp());
