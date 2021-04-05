@@ -1,16 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/Screens/Home/KandidatPertama.dart';
+import 'package:flutter_auth/Screens/Home/HomePage.dart';
 
 class Visi2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          appBar: AppBar(
+            title: Text('Kandidat Kedua'),
+            backgroundColor: Colors.deepOrangeAccent,
+          ),
             body: Container(
               decoration: BoxDecoration(
-                color: Colors.purple,
+                color: Colors.grey,
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Column(
@@ -18,9 +23,9 @@ class Visi2 extends StatelessWidget {
                   children: <Widget>[
                     new SizedBox(
                         width: 500,
-                        height: 700,
+                        height: 600,
                         child: Card(
-                            color: Colors.purpleAccent,
+                            color: Colors.deepOrangeAccent,
                             elevation: 5,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0)),
@@ -126,7 +131,7 @@ class Visi2 extends StatelessWidget {
                                                             children: <Widget> [
                                                               new Padding(padding: EdgeInsets.all(5.0)),
                                                               new RaisedButton(
-                                                                color: Colors.purple,
+                                                                color: Colors.orange,
                                                                 child: Text(
                                                                     'BACK',
                                                                     style: TextStyle(
@@ -137,7 +142,7 @@ class Visi2 extends StatelessWidget {
                                                                 onPressed: () {
                                                                   Navigator.pushReplacement(
                                                                       context,
-                                                                      MaterialPageRoute(builder: (context) => KandidatPertama()));
+                                                                      MaterialPageRoute(builder: (context) => HomePage()));
                                                                 },
                                                               )
                                                             ],

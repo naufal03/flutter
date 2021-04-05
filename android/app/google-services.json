@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020840657186",
+    "project_id": "votingapp-b1d1c",
+    "storage_bucket": "votingapp-b1d1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020840657186:android:30c2d528fc2e7b67a7657b",
+        "android_client_info": {
+          "package_name": "com.haha.flutter_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020840657186-otrgad4v1i8pa0la57ruj1rm4hc8ho1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXLdbzMmZhmpTmptTmgsLhskhSlANdbN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020840657186-otrgad4v1i8pa0la57ruj1rm4hc8ho1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
