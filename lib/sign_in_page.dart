@@ -1,3 +1,5 @@
+import 'package:flutter_svg/flutter_svg.dart';
+
 import 'authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,10 +21,9 @@ class SignInPage extends StatelessWidget {
       backgroundColor: Colors.grey,
       body: Center(
         child: Column(
-
+            mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(padding: EdgeInsets.all(10.0)),
-
 
           TextField(
             controller: emailController,
@@ -36,6 +37,7 @@ class SignInPage extends StatelessWidget {
               labelText: "Password",
             ),
           ),
+          new Padding(padding: EdgeInsets.all(20.0)),
           RaisedButton(
             color: Colors.orange,
             onPressed: () {

@@ -145,11 +145,11 @@ class HomePage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => (Vote())));
+                                  MaterialPageRoute(builder: (context) => ((Vote()))));
                             }
                             ),
-                        RaisedButton(
-                          color: Colors.orange,
+                        ElevatedButton(
+
                           onPressed: () {
                             context.read<AuthenticationService>().signOut();
                           },
